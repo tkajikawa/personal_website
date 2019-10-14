@@ -1,4 +1,8 @@
 # gitignore template for personal website
+*
+!*.py
+!*.txt
+!*.md
 
-# Ignore venv
-flask/
+!/app
+!/flask
