@@ -1,12 +1,14 @@
 # gitignore template for personal website
+
+__pycache__/
+*.py[cod]
+
 *
 !*.py
 !*.txt
 !*.md
 !*.html
 !*.css
-
-/__pycache__
 
 !/app
 /app/__pycache__
