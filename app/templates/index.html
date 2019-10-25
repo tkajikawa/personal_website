@@ -1,49 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/cover.css')}}">
-    <title>Trent Kajikawa</title>
-  </head>
-</head>
-<body>
-        <div class="site-wrapper">
-
-                <div class="site-wrapper-inner">
-          
-                  <div class="cover-container">
-
-                    <div class="masthead clearfix">
-                      <div class="inner">
-                        <!-- <h3 class="masthead-brand">Trent Kajikawa</h3> -->
-                        <nav class="nav nav-masthead">
-                          <a class="nav-link active" href="#">Home</a>
-                          <a class="nav-link" href="{{ url_for('aboutme') }}">About Me</a>
-                          <a class="nav-link" href="{{ url_for('music') }}">Music</a>
-                        </nav>
-                      </div>
-                    </div>
-          
-                    <div class="inner cover">
-                      <h1 class="cover-heading">Trent M. Kajikawa.</h1>
-                      <p class="lead">Quantitative education researcher, novice surfer, & data enthusiast.</p>
-                      <p><medium>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
-                            <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" fill="currentColor" fill-rule="evenodd"></path>
-                        </svg>
-                          Los Angeles, CA
-                      </medium></p>
-                    </div>
-          
-                  </div>
-          
-                </div>
-          
-        </div>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block title %} about me {% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+  <h1 class ="text-center">
+    Hello, world!
+  </h1>
+  <p class ="text-center">
+    Quantitative education researcher, data enthusiast, & novice surfer.
+  </p>
+{% endblock %}
