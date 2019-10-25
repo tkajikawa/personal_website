@@ -9,6 +9,7 @@ __pycache__/
 !*.md
 !*.html
 !*.css
+!*.jpg
 
 !/app
 /app/__pycache__

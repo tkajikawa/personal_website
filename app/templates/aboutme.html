@@ -8,31 +8,37 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}">
+
     <title>About Trent</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-          <div class="col-sm-3 px-1 bg-dark">
-              <div class="py-2 sticky-top flex-grow-1">
-                  <div class="nav flex-sm-column">
-                      <a href="" class="nav-link d-none d-sm-inline">Sidebar</a>
-                      <a href="" class="nav-link">Link</a>
-                      <a href="" class="nav-link">Link</a>
-                      <a href="" class="nav-link">Link</a>
-                      <a href="" class="nav-link">Link</a>
-                      <a href="" class="nav-link">Link</a>
-                      <a class="icons-sm slack-ic"><i class="fa fa-slack"> </i></a>
-                  </div>
+      <div class="site-wrapper">
+
+          <div class="site-wrapper-inner">
+          
+            <div class="cover-container">
+
+              <div class="masthead clearfix">
+                <div class="inner">
+                  <!-- <h3 class="masthead-brand">Trent Kajikawa</h3> -->
+                  <nav class="nav nav-masthead">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                    <a class="nav-link" href="{{ url_for('aboutme') }}">About Me</a>
+                    <a class="nav-link" href="{{ url_for('music') }}">Music</a>
+                  </nav>
+                </div>
               </div>
-          </div>
-          <div class="col" id="main">
+            </div>
+
+          <div class="inner cover">
+            <div class="lead" id="main">
               <h1>Main Area</h1>
               
               <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote bag. Tote bag cronut semiotics,
                   raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation.
                   Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
-                  <a class="btn-floating btn-lg btn-li" type="button" role="button"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://icons8.com/icon/118502/facebook">Icons by Icons8</a>
               <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb
                   readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
                   forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
@@ -44,6 +50,7 @@
               <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote bag. Tote bag cronut semiotics,
                   raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation.
                   Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
+            </div>
           </div>
       </div>
     </div>
