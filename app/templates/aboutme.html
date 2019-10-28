@@ -1,39 +1,32 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-
-    <div class="container">
-        <div class="jumbotron my-auto">
-          <h1>Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <h1 class="row justify-content-center align-items-center">
-          Hello, world!
-        </h1>
-        <p class="row justify-content-center align-items-center">
+{% extends "layout.html" %}
+{% block title %} about me {% endblock %}
+{% block head %}
+  {{ super() }}
+  <style>
+      body  {
+        background-image: url("/static/img/IMG_3106.JPG");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+  </style>
+{% endblock %}
+{% block content %}
+<div class="container">
+      <h1 class="text-center">
+          Trent Kajikawa
+      </h1>
+      <p class="text-center lead">
+        <medium>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+              <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" fill="currentColor" fill-rule="evenodd"></path>
+          </svg>
+          Los Angeles, CA
+        </medium>
+      </p>
+        <p class ="text-center">
           Quantitative education researcher, data enthusiast, & novice surfer.
         </p>
-    </div>
-
-    <div class="inner cover">
-        <h1 class="cover-heading">Trent M. Kajikawa.</h1>
-        <p class="lead">Quantitative education researcher, novice surfer, & data enthusiast.</p>
-        
-    </div>
-
-
-  </body>
-</html>
+</div>
+{% endblock %}

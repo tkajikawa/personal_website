@@ -10,35 +10,42 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>{% block title %}{% endblock %} - tkajikawa</title>
+    <style>
+        body {
+        min-height: 100vh;
+        position: relative;
+        margin: 0;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
     {% endblock %}
   </head>
   <body>
+    <div class="container">
       <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link active" href="#">about me</a>
+            <a class="nav-link" href="{{ url_for('aboutme') }}">about me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">top 25 played</a>
+            <a class="nav-link" href="{{ url_for('music') }}">top 25 played</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">more</a>
+            <a class="nav-link" href="{{ url_for('more') }}">more</a>
           </li>
         </ul>
-      <div class ="container">      
-        {% block content %}
-        {% endblock %}
-      </div>
+
+    <!-- Test for other html pages -->
+    {% block content %}{% endblock %}
 
       <div id="footer">
           {% block footer %}
-          <p><medium>
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
-                  <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" fill="currentColor" fill-rule="evenodd"></path>
-              </svg>
-              Los Angeles, CA
-          </medium></p>
           {% endblock %}
       </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
