@@ -1,12 +1,8 @@
-from flask import render_template, request, url_for, redirect
+from flask import render_template, request, url_for, redirect, send_file
 from app import app
 
 @app.route("/")
 def index():
-    return render_template('index.html')
-
-@app.route('/aboutme/')
-def aboutme():
     return render_template('index.html')
 
 @app.route('/music/')
