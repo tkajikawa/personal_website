@@ -5,9 +5,9 @@ from app import app
 def index():
     return render_template('index.html')
 
-@app.route('/music/')
-def music():
-    return render_template('music.html')
+@app.route('/spotify_api/')
+def spotify_api():
+    return render_template('chixtape.html')
 
 @app.route('/more/')
 def more():
