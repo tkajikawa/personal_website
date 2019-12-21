@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+{% block title %} blog {% endblock %}
+{% block head %}
+  {{ super() }}
+  <style>
+    .center {
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+      </style>
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="jumbotron p-4 p-md-5 rounded center">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 font-italic">Blog</h1>
+        <p class="lead my-3">Covering data, education, music, and much more</p>
+      </div>
+  </div>
+
+    <div class="row mb-2"> 
+
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Music</strong>
+            <h3 class="mb-0">Spotify API</h3>
+            <div class="mb-1 text-muted">Nov 2019</div>
+            <p class="card-text mb-auto">A quick project to test the Spotify API using R and RMarkdown. Comparison between samples on Chixtape 5 and its original songs.</p>
+            <a href="{{ url_for('spotify_api') }}" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block fa-align">
+            <i class="fab fa-spotify fa-5x text-success"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-warning">Education</strong>
+            <h3 class="mb-0">Next blog post</h3>
+            <div class="mb-1 text-muted">Dec 2019</div>
+            <p class="mb-auto">I want to do a blog post once per month. This month I will be writing about education</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block fa-align">
+              <i class="fas fa-book fa-5x text-warning"></i>
+            </div>
+        </div>
+        
+      </div>
+
+      <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-warning">Education</strong>
+              <h3 class="mb-0">Next blog post</h3>
+              <div class="mb-1 text-muted">Dec 2019</div>
+              <p class="mb-auto">I want to do a blog post once per month. This month I will be writing about education</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block fa-align">
+                <i class="fas fa-book fa-5x text-warning"></i>
+              </div>
+          </div>
+          
+        </div>
+
+    </div>
+</div>
+{% endblock %}

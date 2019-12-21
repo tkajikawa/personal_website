@@ -27,8 +27,17 @@
 
     <title>{% block title %}{% endblock %} - Trent Kajikawa</title>
     <style>
+
     .text_black{
     color: black;
+    }
+    
+    .fa-align {
+      float: right;
+      padding: 70px 0;
+      width: 120px;
+      /* border: 3px solid green; */
+      text-align: center;
     }
     </style>
     {% endblock %}
@@ -38,7 +47,7 @@
       <div class="container">
         <ul class="navbar justify-content-center">
               <a class="nav-link text_black" href="{{ url_for('index') }}">about me</a>
-              <!-- <a class="nav-link text_black" href="{{ url_for('spotify_api') }}">spotify api proj</a> -->
+              <a class="nav-link text_black" href="{{ url_for('blog') }}">blog</a>
               <a class="nav-link text_black" href="{{ url_for('static', filename='pdf/tkajikawa_resume.pdf') }}">resume</a>
               <a class="nav-link text_black">\\</a>
               <a class="nav-link text_black fab fa-linkedin-in fa-font-awesome" href="https://www.linkedin.com/in/tmkajikawa/"></a>

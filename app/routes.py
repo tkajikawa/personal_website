@@ -5,10 +5,14 @@ from app import app
 def index():
     return render_template('index.html')
 
-@app.route('/spotify_api/')
+@app.route('/blog/spotify_api/')
 def spotify_api():
     return render_template('chixtape.html')
 
 @app.route('/more/')
 def more():
     return render_template('more.html')
+
+@app.route('/blog/')
+def blog():
+    return render_template('blog.html')
