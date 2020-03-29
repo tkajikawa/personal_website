@@ -13,10 +13,6 @@ def spotify_api():
 def rhsu_2020():
     return render_template('rhsu_2020.html')
 
-@app.route('/more/')
-def more():
-    return render_template('more.html')
-
 @app.route('/blog/')
 def blog():
     return render_template('blog.html')

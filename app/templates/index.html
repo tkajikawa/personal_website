@@ -3,46 +3,45 @@
 {% block head %}
   {{ super() }}
   <style>
-    html,
-    body {
-      height: 100%;
-      background-image: url("/static/img/background_image.jpg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-attachment: fixed;
-      background-size: cover;
-    }
     .center {
       position: fixed;
       left: 50%;
       top: 80%;
       transform: translate(-50%, -50%);
-      /* background-color: rgba(0, 0, 0, 0.568); */
-      color: #fff;
-      /* text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.75); */
-      /* box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); */
+    }
+    .top {
+      position: fixed;
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%, -50%);
     }
     .text-large {
-  font-size: 125%;
-}
+    font-size: 125%;
+    }
       </style>
 {% endblock %}
 {% block content %}
-<div class="jumbotron-fluid center rounded">
-      <h2 class="text-center">
-          Trent Kajikawa
-      </h2>
-      <p class="text-center lead">
-        <medium>
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
-              <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" fill="currentColor" fill-rule="evenodd"></path>
-          </svg>
-          Los Angeles, CA
-        </medium>
+<div class="container">
+  <div class="top">
+    <img src= "{{url_for('static', filename='img/head2.jpg')}}" class="rounded-circle" width="250" />
+  </div>
+
+  <div class="center rounded">
+    <h2 class="text-center">
+        Trent Kajikawa
+    </h2>
+    <p class="text-center lead">
+      <medium>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+            <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" fill="currentColor" fill-rule="evenodd"></path>
+        </svg>
+        Los Angeles, CA
+      </medium>
+    </p>
+      <p class ="text-center text-large">
+        Quantitative education researcher, data analyst, & novice surfer.
       </p>
-        <p class ="text-center text-large">
-          Quantitative education researcher, data analyst, & novice surfer.
-        </p>
+  </div>
 </div>
 
 
